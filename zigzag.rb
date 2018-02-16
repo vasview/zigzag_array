@@ -84,7 +84,7 @@ end
 
 # Run the program to see the results.
 require 'pp'
-puts "Expected array:"
+puts "Expected result for array 7x7:"
 [ [ 1,  3,   4,  10,  11,  21,  22 ],
   [ 2,  5,   9,  12,  20,  23,  34 ],
   [ 6,  8,  13,  19,  24,  33,  35 ],
@@ -99,6 +99,6 @@ puts '============================'
 puts ''
 puts "Computered result:"
 
-zigzag_array = Zigzag.new(7)
+zigzag_array = Zigzag.new(6)
 zigzag_array.perform
 zigzag_array.print_result
