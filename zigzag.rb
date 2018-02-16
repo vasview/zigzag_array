@@ -1,4 +1,3 @@
-require 'pp'
 class Zigzag
   def initialize(array_length)
     length = array_length
@@ -83,6 +82,8 @@ class Zigzag
   end
 end
 
+# Run the program to see the results.
+require 'pp'
 puts "Expected array:"
 [ [ 1,  3,   4,  10,  11,  21,  22 ],
   [ 2,  5,   9,  12,  20,  23,  34 ],
@@ -97,6 +98,7 @@ end
 puts '============================'
 puts ''
 puts "Computered result:"
+
 zigzag_array = Zigzag.new(7)
 zigzag_array.perform
 zigzag_array.print_result
